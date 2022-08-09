@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang = "en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv= "X-UA-Compatible" content= "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+    <!---->
+    <!---->
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Smart Fitn3ss</title>
+    <link rel="stylesheet" href="pages.css">
+    <link rel="script" href="script.js">
+</head>
+<body>
+    <!--Start Header-->
+    <header>
+        <nav>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="test.html" class="active">Testimonies</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.youtube.com/channel/UCjAsoHLuVjjW_wJE3c_VfOQ" target="_blank">Youtube</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--End Header-->
+    <section class="about">
+        <div class="row">
+            <div class="image">
+                <!--Change images for slideshow!-->
+                <img class="mySlides" src="gym1.jpg">
+                <img class="mySlides" src="gym2.jpg">
+                <img class="mySlides" src="gym3.jpg">
+            </div>
+            <div class="content">
+                <h1>Testimonies</h1>
+                <h2>Client 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia felis ac dui aliquet gravida. Curabitur sit amet odio aliquam, elementum odio eget, vestibulum purus. Donec et lorem tincidunt, placerat odio vitae, sollicitudin quam. Vestibulum consequat dolor ac erat laoreet, ut imperdiet mi elementum. Maecenas a rutrum nibh. Proin pretium urna at sapien viverra sagittis. Etiam posuere turpis ut rhoncus tincidunt. Sed convallis, lectus in scelerisque volutpat, lacus odio ultrices nunc, nec pellentesque nibh diam vel nisi. Vivamus in porta nunc</p>
+                <h2>Client 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia felis ac dui aliquet gravida. Curabitur sit amet odio aliquam, elementum odio eget, vestibulum purus. Donec et lorem tincidunt, placerat odio vitae, sollicitudin quam. Vestibulum consequat dolor ac erat laoreet, ut imperdiet mi elementum. Maecenas a rutrum nibh. Proin pretium urna at sapien viverra sagittis. Etiam posuere turpis ut rhoncus tincidunt. Sed convallis, lectus in scelerisque volutpat, lacus odio ultrices nunc, nec pellentesque nibh diam vel nisi. Vivamus in porta nunc</p>
+                <h2>Client 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia felis ac dui aliquet gravida. Curabitur sit amet odio aliquam, elementum odio eget, vestibulum purus. Donec et lorem tincidunt, placerat odio vitae, sollicitudin quam. Vestibulum consequat dolor ac erat laoreet, ut imperdiet mi elementum. Maecenas a rutrum nibh. Proin pretium urna at sapien viverra sagittis. Etiam posuere turpis ut rhoncus tincidunt. Sed convallis, lectus in scelerisque volutpat, lacus odio ultrices nunc, nec pellentesque nibh diam vel nisi. Vivamus in porta nunc</p>
+                <h2>Client 4</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia felis ac dui aliquet gravida. Curabitur sit amet odio aliquam, elementum odio eget, vestibulum purus. Donec et lorem tincidunt, placerat odio vitae, sollicitudin quam. Vestibulum consequat dolor ac erat laoreet, ut imperdiet mi elementum. Maecenas a rutrum nibh. Proin pretium urna at sapien viverra sagittis. Etiam posuere turpis ut rhoncus tincidunt. Sed convallis, lectus in scelerisque volutpat, lacus odio ultrices nunc, nec pellentesque nibh diam vel nisi. Vivamus in porta nunc</p>
+            </div>
+            </div>
+    </section>
+    <!-- Start Footer -->
+    <footer>
+        The more you know, the more you grow!
+    </footer>
+    <script>
+        var slideIndex = 0;
+        carousel();
+
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > x.length) {slideIndex = 1}
+        x[slideIndex-1].style.display = "block";
+        setTimeout(carousel, 3000); // Change image every 3 seconds
+        }
+    </script>
+</body>
+</html>
