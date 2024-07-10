@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang = "en" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv= "X-UA-Compatible" content= "IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+    <!---->
+    <!---->
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Smart Fitn3ss</title>
+    <link rel="stylesheet" href="pages.css">
+    <link rel="script" href="script.js">
+</head>
+<body>
+    <!--Start Header-->
+    <header>
+        <nav>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <!--<li><a href="test.html">Testimonies</a></li>-->
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.youtube.com/channel/UCjAsoHLuVjjW_wJE3c_VfOQ" target="_blank">Youtube</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--End Header-->
+    <!--Start Services-->
+    <section class="about">
+        <div id='product-component-1707240735441'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: '21c5b8.myshopify.com',
+      storefrontAccessToken: '4ff729221f7bd4bc7b3014da5f02a7fb',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '7941544542406',
+        node: document.getElementById('product-component-1707240735441'),
+        moneyFormat: '%24%7B%7Bamount%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "calc(25% - 20px)",
+          "margin-left": "20px",
+          "margin-bottom": "50px"
+        }
+      },
+      "button": {
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        "color": "#ecf0f9",
+        ":hover": {
+          "color": "#ecf0f9",
+          "background-color": "#2218ff"
+        },
+        "background-color": "#140ef1",
+        ":focus": {
+          "background-color": "#2218ff"
+        }
+      },
+      "quantityInput": {
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        "color": "#ecf0f9",
+        ":hover": {
+          "color": "#ecf0f9",
+          "background-color": "#2218ff"
+        },
+        "background-color": "#140ef1",
+        ":focus": {
+          "background-color": "#2218ff"
+        }
+      },
+      "quantityInput": {
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px"
+      }
+    },
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-size": "17px",
+        "padding-top": "16.5px",
+        "padding-bottom": "16.5px",
+        "color": "#ecf0f9",
+        ":hover": {
+          "color": "#ecf0f9",
+          "background-color": "#2218ff"
+        },
+        "background-color": "#140ef1",
+        ":focus": {
+          "background-color": "#2218ff"
+        }
+      }
+    },
+    "text": {
+      "total": "Subtotal",
+      "button": "Checkout"
+    }
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "background-color": "#140ef1",
+        ":hover": {
+          "background-color": "#2218ff"
+        },
+        ":focus": {
+          "background-color": "#2218ff"
+        }
+      },
+      "count": {
+        "font-size": "17px",
+        "color": "#ecf0f9",
+        ":hover": {
+          "color": "#ecf0f9"
+        }
+      },
+      "iconPath": {
+        "fill": "#ecf0f9"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script>
+    </section>
+    <!--End Services-->    
+    <!-- Start Footer -->
+    <footer>
+        The more you know, the more you grow!
+        <p>&copy; Smartfitn3ss. All rights reserved. </p>
+    </footer>
+</body>
+</html>
