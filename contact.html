@@ -45,7 +45,7 @@
                     <p><input type="email" name="email" placeholder="e-mail address" required></p>
                     <p><input type="text" name="subject" placeholder="Subject" required></p>
                     <p><textarea name="message" placeholder="Message" required></textarea></p>
-                    <button type="submit">Submit</button>
+                    <button type="submit" class="submit-button">Submit</button>
                 </form>
                 <p>Phone: (512)-917-6727</p>
                 <li><a href="mailto:smartfitn3ss@yahoo.com"><h3>Email: smartfitn3ss@yahoo.com</h3></a></li>
@@ -57,6 +57,33 @@
         The more you know, the more you grow!
         <p>&copy; Smartfitn3ss 2024. All rights reserved. </p>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const form = document.querySelector(".contact-form");
+            const messageDiv = document.getElementById("message");
+    
+            form.addEventListener("submit", async function(event) {
+                event.preventDefault();
+    
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: form.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+    
+                if (response.ok) {
+                    messageDiv.textContent = "Message successfully sent!";
+                    form.reset();
+                } else {
+                    messageDiv.textContent = "Message sending failed, try again.";
+                }
+            });
+        });
+    </script>
+    
 
 </body>
 </html>
