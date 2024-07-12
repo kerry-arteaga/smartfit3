@@ -39,13 +39,12 @@
             </div>
             <div class="content">
                 <h1>Contact Smartfitn3ss</h1>
-                <div id="message" style="color: red;"></div>
                 <form class="contact-form" action="https://formspree.io/f/xpwawqpj" method="post">
                     <p><input type="text" name="name" placeholder="Full name" required></p>
                     <p><input type="email" name="email" placeholder="e-mail address" required></p>
                     <p><input type="text" name="subject" placeholder="Subject" required></p>
                     <p><textarea name="message" placeholder="Message" required></textarea></p>
-                    <button type="submit" class="submit-button">Submit</button>
+                    <button type="submit">Submit</button>
                 </form>
                 <p>Phone: (512)-917-6727</p>
                 <li><a href="mailto:smartfitn3ss@yahoo.com"><h3>Email: smartfitn3ss@yahoo.com</h3></a></li>
@@ -57,41 +56,5 @@
         The more you know, the more you grow!
         <p>&copy; Smartfitn3ss 2024. All rights reserved. </p>
     </footer>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const form = document.querySelector(".contact-form");
-            const messageDiv = document.getElementById("message");
-
-            form.addEventListener("submit", async function(event) {
-                event.preventDefault();
-
-                messageDiv.textContent = "Sending message...";
-                messageDiv.style.color = "blue";
-
-                const formData = new FormData(form);
-
-                await new Promise(resolve => setTimeout(resolve, 10000)); // 2-second delay
-
-                const response = await fetch(form.action, {
-                    method: form.method,
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-
-                if (response.ok) {
-                    messageDiv.textContent = "Message successfully sent!";
-                    messageDiv.style.color = "green";
-                    form.reset();
-                } else {
-                    messageDiv.textContent = "Message sending failed, try again.";
-                    messageDiv.style.color = "red";
-                }
-            });
-        });
-    </script>
-    
-
 </body>
 </html>
