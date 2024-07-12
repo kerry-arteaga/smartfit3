@@ -39,7 +39,7 @@
             </div>
             <div class="content">
                 <h1>Contact Smartfitn3ss</h1>
-                <div id="message"></div>
+                <div id="message" style="color: red;"></div>
                 <form class="contact-form" action="https://formspree.io/f/xpwawqpj" method="post">
                     <p><input type="text" name="name" placeholder="Full name" required></p>
                     <p><input type="email" name="email" placeholder="e-mail address" required></p>
@@ -76,9 +76,11 @@
     
                 if (response.ok) {
                     messageDiv.textContent = "Message successfully sent!";
+                    messageDiv.style.color = "green";
                     form.reset();
                 } else {
                     messageDiv.textContent = "Message sending failed, try again.";
+                    messageDiv.style.color = "red";
                 }
             });
         });
