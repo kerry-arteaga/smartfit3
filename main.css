@@ -114,7 +114,7 @@ nav .open, .close{
         font-size: 6rem;
     }
 }
-.gym-images{
+/*.gym-images{
     width:  100%;
     height: fit-content;
     background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)),
@@ -124,10 +124,43 @@ nav .open, .close{
 }
 .gym-images .mySlides{
     position: relative;
-    /*top: 50%;*/
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -0.5%);
     text-align: center;
+}
+*/
+
+.gym-images {
+  width: 100%;
+  overflow: hidden;
+  padding: 2rem 0;
+  background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(bg2.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+
+.scroll-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 30s linear infinite;
+}
+
+.scroll-track img {
+  width: 300px; /* Adjust based on layout */
+  height: 200px; /* Consistent height */
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 /* Start About */
 .about{
@@ -413,6 +446,39 @@ nav .open, .close{
     background-color: #000;
     color: #0000ff;
 }
+/*Start Maps*/
+.google-reviews {
+  background-color: #000;
+  padding: 2rem;
+  text-align: center;
+  color: #fff;
+}
+
+.google-reviews h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0000FF;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* Start Footer */
 footer{
     width: 100%;
